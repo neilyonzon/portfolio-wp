@@ -1,0 +1,54 @@
+.hero {
+  height: 60rem;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding-left: 10rem;
+  position: relative;
+  overflow: hidden;
+
+  &__image {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    background-position: 40% !important;
+    background-repeat: no-repeat !important;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 35% 100%);
+    position: absolute;
+  }
+
+  &__text {
+    width: 60rem;
+    position: relative;
+    z-index: 999;
+
+    & > h1 {
+      line-height: 8rem;
+    }
+  }
+
+  &__changer {
+    z-index: 999;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    &-btn > i {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__emphasis {
+    text-decoration: underline;
+  }
+
+  & .btn {
+    position: relative;
+    top: 5rem;
+    left: 0.3rem;
+  }
+}

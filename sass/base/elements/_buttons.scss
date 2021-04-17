@@ -1,0 +1,88 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid;
+  border-color: $color__border-button;
+  background: $color__background-button;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1;
+  padding: 0.6em 1em 0.4em;
+
+  &:hover {
+    border-color: $color__border-button-hover;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $color__border-button-focus;
+  }
+}
+
+.btn {
+  min-width: 7rem;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+
+  &-primary {
+    background: $color-primary;
+    color: $color-white-off;
+    transition: background 1s;
+
+    &:hover {
+      background: $color-secondary;
+      transition: background 0.6s;
+    }
+  }
+
+  &-primary--inverse {
+    color: $color-primary;
+    background: $color-white;
+    border: 2.3px solid $color-primary;
+    transition: background 0.3s, color 0.3s;
+
+    &:hover {
+      color: $color-white;
+      background: $color-secondary;
+      border: 2.3px solid $color-secondary;
+      transition: background 0.3s, color 0.3s;
+    }
+  }
+
+  &-secondary {
+    background: $color-tertiary;
+    color: $color-dark;
+    transition: background 0.6s;
+
+    &:hover {
+      color: $color-white-off;
+      background: $color-secondary;
+      transition: background 0.6s;
+    }
+  }
+
+  &-orange {
+    background: $color-orange;
+    color: white;
+    transition: background 0.6s;
+
+    &:hover {
+      background: $color-orange-light;
+      transition: background 0.6s;
+    }
+  }
+
+  &-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    & > i {
+      color: $color-white;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: $color__text-main;
+  font-family: $font__main;
+  font-size: 1rem;
+  line-height: $font__line-height-body;
+}
+
+p {
+  font-size: 1.8rem;
+  margin: 2rem 0rem;
+  font-family: roboto;
+}
+
+@import "headings";
+@import "copy";
