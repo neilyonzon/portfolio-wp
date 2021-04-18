@@ -11,6 +11,15 @@
     (($columns__margin * ($numberColumns - 1)) / $numberColumns);
 }
 
+//Padding
+@mixin padding-standard {
+  padding: 7rem 10rem;
+}
+
+@mixin padding-tab {
+  padding: 3rem 5rem;
+}
+
 // Media Query Manager
 
 @mixin respond($breakpoint) {

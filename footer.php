@@ -11,24 +11,18 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'theme-2021' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'theme-2021' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
+<footer id="colophon" class="site-footer">
+    <div class="site-info">
+        <?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'theme-2021' ), 'theme-2021', '<a href="http://underscores.me/">Neil Yonzon</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'theme-2021' ), 'Ethereal Green by', 'Neil Yonzon' );
 				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+    </div><!-- .site-info -->
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>

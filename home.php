@@ -35,6 +35,30 @@ get_header();
             <button class="btn-icon hero__changer-btn"> <i class="fas fa-dice-d20 fas-lg"></i></button>
         </div>
     </div>
+    <div class="experience-links">
+        <div class="experience-links__ratio-container">
+            <div class="experience-links__container">
+                <div class="experience-links__ratio-box">
+                    <div class="experience-links__link-container">
+                        <a href="#" class="experience-links__link experience-links__btn">ProjX</a>
+                    </div>
+                </div>
+                <div class="experience-links__ratio-box">
+                    <div class="experience-links__link-container experience-links__link-container--inline">
+                        <a href="#" class="experience-links__link experience-links__inline">eXperience</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills">
+        <div class="skills__orbit-carousel">
+
+        </div>
+        <div class="skills__panel side-panel">
+            <h3 class="h3">Skills & Technologies</h3>
+        </div>
+    </div>
 
 </main><!-- #main -->
 

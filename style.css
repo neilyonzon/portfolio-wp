@@ -49,7 +49,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 .bg--primary {
-	background: #087b68;
+	background: #128158;
 	color: #fff6da;
 }
 
@@ -615,13 +615,14 @@ input[type="submit"]:focus {
 	font-size: 2rem;
 	padding: 1rem 2rem;
 	border: none;
+	border-radius: 2px;
 	margin-right: 1rem;
 	cursor: pointer;
 	text-decoration: none;
 }
 
 .btn-primary {
-	background: #087b68;
+	background: #128158;
 	color: #fff6da;
 	transition: background 1s;
 }
@@ -632,9 +633,9 @@ input[type="submit"]:focus {
 }
 
 .btn-primary--inverse {
-	color: #087b68;
+	color: #128158;
 	background: #fcfff5;
-	border: 2.3px solid #087b68;
+	border: 2.3px solid #128158;
 	transition: background 0.3s, color 0.3s;
 }
 
@@ -658,8 +659,8 @@ input[type="submit"]:focus {
 }
 
 .btn-orange {
-	background: #ff653e;
-	color: white;
+	background: #fc6f40;
+	color: #05140a;
 	transition: background 0.6s;
 }
 
@@ -754,7 +755,7 @@ html {
 /* Hero
 --------------------------------------------- */
 .hero {
-	height: 60rem;
+	height: 65rem;
 	display: flex;
 	align-items: center;
 	background-size: cover;
@@ -790,8 +791,16 @@ html {
 	bottom: 5%;
 	right: 3%;
 	font-size: 1.4rem;
-	font-weight: bold;
 	cursor: pointer;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	color: #fcfff5;
+}
+
+.hero__changer:hover i {
+	transform: rotate(365deg);
+	transition: transform 1s;
 }
 
 .hero__changer-btn > i {
@@ -806,6 +815,173 @@ html {
 	position: relative;
 	top: 5rem;
 	left: 0.3rem;
+}
+
+/* Galleries
+--------------------------------------------- */
+.experience-links {
+	width: 100%;
+	height: 65rem;
+	background: #b5e2b2;
+	padding: 7rem 10rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+	.experience-links {
+		height: 50rem;
+	}
+}
+
+@media only screen and (max-width: 56.25em) {
+	.experience-links {
+		padding: 3rem 5rem;
+		height: 45rem;
+	}
+}
+
+.experience-links__ratio-container {
+	overflow: hidden;
+	width: 100%;
+	height: 52rem;
+	position: relative;
+}
+
+@media only screen and (max-width: 75em) {
+	.experience-links__ratio-container {
+		height: 0;
+		padding-top: 50%;
+		position: relative;
+	}
+}
+
+@media only screen and (max-width: 56.25em) {
+	.experience-links__ratio-container {
+		padding-top: 45%;
+	}
+}
+
+.experience-links__container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff6da;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0rem 2rem;
+}
+
+.experience-links__ratio-box {
+	height: 0;
+	overflow: hidden;
+	padding-top: 29%;
+	position: relative;
+	width: 100%;
+}
+
+.experience-links__link-container {
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 1.3rem solid #128158;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.experience-links__link-container--inline {
+	border: none;
+}
+
+.experience-links__link {
+	text-decoration: none;
+	color: #128158;
+	font-size: 6rem;
+}
+
+@media only screen and (max-width: 75em) {
+	.experience-links__link {
+		font-size: 5rem;
+	}
+}
+
+@media only screen and (max-width: 56.25em) {
+	.experience-links__link {
+		font-size: 3rem;
+	}
+}
+
+.experience-links__btn {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: color 0.5s, background 0.5s;
+}
+
+.experience-links__btn:hover {
+	color: #fff6da;
+	background: #128158;
+	transition: color 0.5s, background 0.5s;
+}
+
+.experience-links__inline {
+	position: relative;
+	transition: color 0.5s;
+}
+
+.experience-links__inline:hover {
+	color: #579c6d;
+	transition: color 0.5s;
+}
+
+.experience-links__inline:hover:after {
+	color: #579c6d;
+	transition: color 0.5s;
+}
+
+.experience-links__inline:hover:before {
+	background: #579c6d;
+	transition: background 0.5s;
+}
+
+.experience-links__inline:before {
+	content: "";
+	height: 0.5rem;
+	width: 90%;
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 1%;
+	background: #128158;
+	transition: background 0.5s;
+}
+
+.experience-links__inline:after {
+	color: #128158;
+	content: "\f138";
+	/* You should use \ and not /*/
+	font-family: "Font Awesome 5 Free";
+	/* This is the correct font-family*/
+	font-weight: 600;
+	font-size: 3rem;
+	position: absolute;
+	top: 80%;
+	left: 96%;
+	transition: color 0.5s;
+}
+
+@media only screen and (max-width: 56.25em) {
+	.experience-links__inline:after {
+		font-size: 2rem;
+	}
 }
 
 /* Navigation
@@ -831,7 +1007,7 @@ html {
 }
 
 .main-navigation__links a {
-	color: white;
+	color: #fcfff5;
 	font-size: 1.8rem;
 	text-decoration: none;
 }
