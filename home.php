@@ -40,12 +40,13 @@ get_header();
             <div class="experience-links__container">
                 <div class="experience-links__ratio-box">
                     <div class="experience-links__link-container">
-                        <a href="#" class="experience-links__link experience-links__btn">ProjX</a>
+                        <a href="#" class="experience-links__link experience-links__btn" aria-label="Projects">ProjX</a>
                     </div>
                 </div>
                 <div class="experience-links__ratio-box">
                     <div class="experience-links__link-container experience-links__link-container--inline">
-                        <a href="#" class="experience-links__link experience-links__inline">eXperience</a>
+                        <a href="#" class="experience-links__link experience-links__inline"
+                            aria-label="Experience">Xperience</a>
                     </div>
                 </div>
             </div>

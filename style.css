@@ -411,7 +411,6 @@ textarea {
 p {
 	font-size: 1.8rem;
 	margin: 2rem 0rem;
-	font-family: roboto;
 }
 
 h1,
@@ -422,8 +421,7 @@ h5,
 h6 {
 	clear: both;
 	margin: 0;
-	font-family: Source Sans Pro, basic-sans, sans-serif;
-	font-weight: lighter;
+	font-weight: 400;
 }
 
 .h1 {
@@ -503,7 +501,7 @@ big {
 body {
 	background: #fff;
 	color: #262c28;
-	font-family: roboto, sans-serif, basic-sans;
+	font-family: "Poppins", roboto, sans-serif, basic-sans;
 }
 
 hr {
@@ -771,7 +769,7 @@ html {
 	height: 100%;
 	background-position: 40% !important;
 	background-repeat: no-repeat !important;
-	clip-path: polygon(60% 0, 100% 0, 100% 100%, 35% 100%);
+	clip-path: polygon(60% 0, 100% 0, 100% 100%, 30% 100%);
 	position: absolute;
 }
 
@@ -804,7 +802,9 @@ html {
 }
 
 .hero__changer-btn > i {
-	font-size: 1.4rem;
+	font-size: 1.5rem;
+	position: relative;
+	bottom: 0.1rem;
 }
 
 .hero__emphasis {
@@ -814,7 +814,7 @@ html {
 .hero .btn {
 	position: relative;
 	top: 5rem;
-	left: 0.3rem;
+	left: 0.5rem;
 }
 
 /* Galleries
@@ -893,6 +893,12 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: border-width 0.5;
+}
+
+.experience-links__link-container:hover {
+	border-width: 0rem;
+	transition: border-width 0.5s;
 }
 
 .experience-links__link-container--inline {
@@ -944,24 +950,26 @@ html {
 
 .experience-links__inline:hover:after {
 	color: #579c6d;
-	transition: color 0.5s;
+	transition: color 0.5s, left 0.6s;
+	left: 96%;
 }
 
 .experience-links__inline:hover:before {
 	background: #579c6d;
-	transition: background 0.5s;
+	transition: background 0.5s, width 0.6s;
+	width: 90%;
 }
 
 .experience-links__inline:before {
 	content: "";
 	height: 0.5rem;
-	width: 90%;
+	width: 20%;
 	display: block;
 	position: absolute;
 	top: 100%;
 	left: 1%;
 	background: #128158;
-	transition: background 0.5s;
+	transition: background 0.5s, width 0.6s;
 }
 
 .experience-links__inline:after {
@@ -974,8 +982,8 @@ html {
 	font-size: 3rem;
 	position: absolute;
 	top: 80%;
-	left: 96%;
-	transition: color 0.5s;
+	left: 30%;
+	transition: color 0.5s, left 0.6s;
 }
 
 @media only screen and (max-width: 56.25em) {

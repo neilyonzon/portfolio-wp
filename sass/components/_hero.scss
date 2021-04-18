@@ -14,7 +14,7 @@
     height: 100%;
     background-position: 40% !important;
     background-repeat: no-repeat !important;
-    clip-path: polygon(60% 0, 100% 0, 100% 100%, 35% 100%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 30% 100%);
     position: absolute;
   }
 
@@ -46,7 +46,9 @@
     }
 
     &-btn > i {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
+      position: relative;
+      bottom: 0.1rem;
     }
   }
 
@@ -57,6 +59,6 @@
   & .btn {
     position: relative;
     top: 5rem;
-    left: 0.3rem;
+    left: 0.5rem;
   }
 }

@@ -63,6 +63,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: border-width 0.5;
+
+    &:hover {
+      border-width: 0rem;
+      transition: border-width 0.5s;
+    }
 
     &--inline {
       border: none;
@@ -108,12 +114,14 @@
 
       &:after {
         color: $color-secondary;
-        transition: color 0.5s;
+        transition: color 0.5s, left 0.6s;
+        left: 96%;
       }
 
       &:before {
         background: $color-secondary;
-        transition: background 0.5s;
+        transition: background 0.5s, width 0.6s;
+        width: 90%;
       }
     }
   }
@@ -121,13 +129,13 @@
   &__inline:before {
     content: "";
     height: 0.5rem;
-    width: 90%;
+    width: 20%;
     display: block;
     position: absolute;
     top: 100%;
     left: 1%;
     background: $color-primary;
-    transition: background 0.5s;
+    transition: background 0.5s, width 0.6s;
   }
 
   &__inline:after {
@@ -138,8 +146,8 @@
     font-size: 3rem;
     position: absolute;
     top: 80%;
-    left: 96%;
-    transition: color 0.5s;
+    left: 30%;
+    transition: color 0.5s, left 0.6s;
 
     @include respond(tab-port) {
       font-size: 2rem;
