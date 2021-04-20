@@ -894,6 +894,7 @@ html {
 	justify-content: center;
 	align-items: center;
 	transition: border-width 0.5;
+	border-radius: 2px;
 }
 
 .experience-links__link-container:hover {
@@ -930,6 +931,7 @@ html {
 	align-items: center;
 	justify-content: center;
 	transition: color 0.5s, background 0.5s;
+	border-radius: 2px;
 }
 
 .experience-links__btn:hover {
@@ -989,6 +991,94 @@ html {
 @media only screen and (max-width: 56.25em) {
 	.experience-links__inline:after {
 		font-size: 2rem;
+	}
+}
+
+/* Section Feature
+--------------------------------------------- */
+.section-feature {
+	width: 100%;
+	min-height: 70rem;
+	display: flex;
+	hyphens: auto;
+	word-wrap: break-word;
+}
+
+.section-feature--reverse {
+	flex-direction: row-reverse;
+}
+
+.section-feature--primary > .section-feature__panel {
+	background: #128158;
+	color: #fff6da;
+}
+
+.section-feature--primary-inverse > .section-feature__panel {
+	background: #fff6da;
+	color: #05140a;
+}
+
+.section-feature--primary > .section-feature__content {
+	background: #fcfff5;
+	color: #128158;
+}
+
+.section-feature--primary-inverse > .section-feature__panel {
+	background: #fcfff5;
+	color: #05140a;
+}
+
+.section-feature--primary-inverse > .section-feature__content {
+	background: #128158;
+	color: #fcfff5;
+}
+
+.section-feature--secondary > .section-feature__panel {
+	background: #579c6d;
+	color: #fcfff5;
+}
+
+.section-feature--secondary-inverse > .section-feature__panel {
+	background: #fff6da;
+	color: #05140a;
+}
+
+.section-feature--secondary-inverse > .section-feature__content {
+	background: #579c6d;
+	color: #fcfff5;
+}
+
+.section-feature__content {
+	width: 70%;
+}
+
+.section-feature__panel {
+	width: 30%;
+	padding: 0rem 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 75em) {
+	.section-feature__panel {
+		padding: 0rem 1rem;
+	}
+}
+
+.section-feature__description {
+	width: 90%;
+	position: relative;
+	top: 20%;
+}
+
+.section-feature__description > h3 {
+	line-height: 6.5rem;
+}
+
+@media only screen and (max-width: 75em) {
+	.section-feature__description > h3 {
+		font-size: 4rem;
+		line-height: inherit;
 	}
 }
 

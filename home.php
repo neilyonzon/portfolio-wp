@@ -52,12 +52,32 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="skills">
-        <div class="skills__orbit-carousel">
+    <div class="section-feature section-feature--primary">
+        <div class="section-feature__content">
+            <div class="orbit-carousel">
 
+            </div>
         </div>
-        <div class="skills__panel side-panel">
-            <h3 class="h3">Skills & Technologies</h3>
+        <div class="section-feature__panel">
+            <div class="section-feature__description">
+                <h3 class="h3">Skills & Technologies</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
+            </div>
+        </div>
+    </div>
+    <div class="section-feature section-feature--secondary-inverse section-feature--reverse">
+        <div class=" section-feature__content">
+            <div class="orbit-carousel">
+
+            </div>
+        </div>
+        <div class="section-feature__panel">
+            <div class="section-feature__description">
+                <h3 class="h3">Layouts + Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. </p>
+            </div>
         </div>
     </div>
 
