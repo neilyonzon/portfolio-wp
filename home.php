@@ -19,16 +19,21 @@ get_header();
 
 <main id="primary" class="site-main">
 
-    <div class="hero bg--primary">
+    <div class="hero bg--primary gc-section">
         <div style="background: linear-gradient( rgba(7,123,104, 0.7), rgba(0, 0, 0, 0.5) ), url('<?php echo THEME_IMG_PATH; ?>/hero_los_angeles.png'), right/contain"
             class="hero__image bg--primary">
         </div>
-        <div class="hero__text">
-            <h1 class="h2">
-                Let Me Be<br />
-                Your Dev <span class="hero__emphasis">Hero</span>
-            </h1>
-            <a href="#" class="btn btn-orange">Learn More</a>
+        <div class="gc-container">
+            <div class="hero__content flex-grid">
+                <div class="gc-col-md-10 hero__text">
+                    <h1 class="h2">
+                        Let Me Be<br />
+                        Your Dev <span class="hero__emphasis">Hero</span>
+                    </h1>
+                    <p>Apologies for the mess! My portfolio site is still under construction.</p>
+                    <a href="#" class="btn btn-orange">Learn More</a>
+                </div>  
+            </div>
         </div>
         <div class="hero__changer">
             <span>Change Hero</span>

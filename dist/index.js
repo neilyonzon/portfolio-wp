@@ -272,8 +272,8 @@ console.log("hello");
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/neilyonzon/Local Sites/neils-portfolio/app/public/wp-content/themes/theme-2021/js/index.js */"./js/index.js");
-module.exports = __webpack_require__(/*! /Users/neilyonzon/Local Sites/neils-portfolio/app/public/wp-content/themes/theme-2021/sass/style.scss */"./sass/style.scss");
+__webpack_require__(/*! /Users/neilyonzon/Local Sites/portfolio/app/public/wp-content/themes/green_city/js/index.js */"./js/index.js");
+module.exports = __webpack_require__(/*! /Users/neilyonzon/Local Sites/portfolio/app/public/wp-content/themes/green_city/sass/style.scss */"./sass/style.scss");
 
 
 /***/ })

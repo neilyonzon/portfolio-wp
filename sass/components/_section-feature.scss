@@ -73,8 +73,8 @@
       line-height: 6.5rem;
 
       @include respond(tab-land) {
-        font-size: 4rem;
-        line-height: inherit;
+        font-size: 4.5rem;
+        line-height: 5rem;
       }
     }
   }

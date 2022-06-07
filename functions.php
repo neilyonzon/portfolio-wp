@@ -174,7 +174,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Enqueue scripts and styles.
  */
 function theme_2021_scripts() {
-    wp_enqueue_style('theme-2021-style', get_stylesheet_uri(), array(), rand(111, 9999));
+    wp_enqueue_style('theme-2021-style', get_template_directory_uri() . '/dist/style.css' , array(), rand(111, 9999));
 	wp_style_add_data( 'theme-2021-style', 'rtl', 'replace' );
 
 
